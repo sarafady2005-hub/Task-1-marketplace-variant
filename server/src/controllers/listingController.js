@@ -36,7 +36,7 @@ export async function getListing(req, res, next) {
     
     // Only return 404 if the document doesn't exist in the database at all
     if (!listing) {
-      return res.status(404).json({ error: 'Listing not found' });
+      return res.status(404).json({ error: 'Listing not found.' });
     }
 
     // Return the listing unconditionally so the client can see its 'removed' status
